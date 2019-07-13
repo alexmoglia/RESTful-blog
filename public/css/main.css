@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #fff;
+  font-family: "Literata", serif;
+  line-height: 1.6; }
+
+.page--title {
+  color: #293241;
+  text-align: center;
+  font-size: 1.5rem; }
+
+.header {
+  background-color: #293241;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.25);
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  position: relative; }
+
+.nav {
+  font-size: 1.5rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center; }
+
+.nav__logo {
+  font-size: 1.7rem; }
+
+#logoText {
+  color: #fff;
+  font-weight: 700; }
+
+.fas {
+  color: #ee6c4d; }
+
+.nav__links {
+  border: 1px solid #fff;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  padding: 0.3rem 0.5rem; }
+  .nav__links:hover {
+    background-color: #fff; }
+    .nav__links:hover a {
+      color: #293241; }
+
+.nav__btn {
+  text-decoration: none;
+  color: #fff; }
+
+.card {
+  border: 1px solid #293241;
+  border-radius: 5px;
+  margin: 1rem 1rem 2.5rem;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.25); }
+
+.card--content {
+  color: #293241;
+  margin: 0.2rem;
+  padding: 0.5rem; }
+
+.card__img {
+  width: 100%; }
+
+.card__date {
+  font-size: 0.9rem; }
+
+.btn {
+  background-color: #fff;
+  color: #ee6c4d;
+  border: 1px solid #ee6c4d;
+  border-radius: 5px;
+  padding: 0.3rem;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  width: 50%;
+  margin: 1rem auto 0.5rem;
+  font-size: 1rem;
+  font-family: "Literata", serif; }
+  .btn:hover {
+    background-color: #ee6c4d;
+    color: #fff;
+    cursor: pointer; }
+
+.card__form {
+  display: inline; }
+
+.form {
+  padding: 0.5rem;
+  color: #293241; }
+
+.form--title {
+  font-size: 1.7rem;
+  margin-bottom: 1rem; }
+
+.form--item {
+  margin-bottom: 1rem; }
+
+.form__label {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem; }
+
+.form__input {
+  border: 1px solid rgba(41, 50, 65, 0.5);
+  border-radius: 5px;
+  width: 100%;
+  max-width: 100%;
+  font-size: 0.9rem;
+  padding: 0.5rem 0.8rem; }
+
+.form__btn {
+  font-size: 1.5rem;
+  font-family: "Literata", serif;
+  background-color: #fff;
+  color: #ee6c4d;
+  border: 1px solid #ee6c4d;
+  border-radius: 5px;
+  padding: 0.2rem 1rem;
+  margin: 0 auto; }
+  .form__btn:hover {
+    cursor: pointer;
+    background-color: #ee6c4d;
+    color: #fff; }
+
+@media screen and (min-width: 1171px) {
+  .card {
+    margin: 1rem 12rem 2.5rem; } }
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  .card {
+    margin: 1rem 5rem 2.5rem; } }
+
+@media screen and (min-width: 501px) {
+  .nav__logo {
+    font-size: 2rem; }
+  .card__date,
+  .card__title,
+  .card__body {
+    padding: 0 1rem; } }

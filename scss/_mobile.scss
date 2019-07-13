@@ -1,0 +1,32 @@
+// Widescreens (1171px+)
+@include mediaXl {
+  .card {
+    margin: 1rem 12rem 2.5rem;
+  }
+}
+
+// Desktops & Laptops (
+@include mediaLg {
+  .card {
+    margin: 1rem 5rem 2.5rem;
+  }
+}
+
+// Tablets & Small Laptops (
+@include mediaMd {
+  // * Nav
+  .nav__logo {
+    font-size: 2rem;
+  }
+
+  // * Card
+  .card__date,
+  .card__title,
+  .card__body {
+    padding: 0 1rem;
+  }
+}
+
+// Smartphones (< 500px)
+@include mediaSm {
+}

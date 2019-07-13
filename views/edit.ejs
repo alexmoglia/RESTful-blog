@@ -1,0 +1,44 @@
+<% include ./partials/header %>
+
+<div class="card">
+  <form class="form" action="/blogs/<%= blog._id %>?_method=PUT" method="POST">
+    <h1 class="form--title">Edit Blog</h1>
+
+    <div class="form--item">
+      <label for="title" class="form__label">Title</label>
+      <input
+        name="blog[title]"
+        type="text"
+        id="title"
+        class="form__input"
+        value="<%= blog.title %>"
+        required
+      />
+    </div>
+    <div class="form--item">
+      <label for="image" class="form__label">Image</label>
+      <input
+        name="blog[image]"
+        type="text"
+        id="image"
+        class="form__input"
+        value="<%= blog.image %>"
+      />
+    </div>
+    <div class="form--item">
+      <label for="body" class="form__label">Blog Body</label>
+      <textarea
+        name="blog[body]"
+        id="body"
+        class="form__input"
+        cols="30"
+        rows="10"
+        required
+      >
+<%= blog.body %>"</textarea
+      >
+    </div>
+    <input class="btn" type="submit" value="Save Changes" />
+  </form>
+</div>
+<% include ./partials/footer %>

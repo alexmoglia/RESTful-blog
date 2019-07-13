@@ -1,0 +1,17 @@
+<% include ./partials/header %>
+
+<h1 class="page--title">A RESTful Blog App</h1>
+
+<% blogs.forEach(function(blog) { %>
+
+<div class="card">
+  <div class="card--content">
+    <img class="card__img" src="<%= blog.image %>" alt="<%= blog.title %>" />
+    <p class="card__date"><%= blog.date.toDateString() %></p>
+    <h2 class="card__title"><%= blog.title %></h2>
+    <p class="card__body"><%= blog.body.substring(0, 100) %>...</p>
+    <a class="btn" href="/blogs/<%= blog._id %>">Read More</a>
+  </div>
+</div>
+
+<% }) %> <% include ./partials/footer %>

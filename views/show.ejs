@@ -1,0 +1,21 @@
+<% include ./partials/header %>
+
+<div class="card">
+  <div class="card--content">
+    <img class="card__img" src="<%= blog.image %>" alt="<%= blog.title %>" />
+    <p class="card__date"><%= blog.date.toDateString() %></p>
+    <h2 class="card__title"><%= blog.title %></h2>
+    <p class="card__body"><%= blog.body %></p>
+    <a class="btn" href="/blogs/<%= blog._id %>/edit">Edit</a>
+    <form
+      class="card__form"
+      action="/blogs/<%= blog._id %>?_method=DELETE"
+      method="POST"
+    >
+      <button class="btn">Delete</button>
+      <!-- <button class="form__btn">Delete</button> -->
+    </form>
+  </div>
+</div>
+
+<% include ./partials/footer %>
